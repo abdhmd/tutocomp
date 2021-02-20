@@ -1,5 +1,5 @@
 /* Google font : Ubuntu */
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap");
 /* Boxicons */
 @import url("https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css");
 /* Our styles*/
@@ -8,130 +8,147 @@
 /*============================================================================================*/
 
 :root {
-    /* color */
-    --primary: #5558D8;
-    --secondary: #F89068;
-    --dark: #171516;
-    /* font */
-    --font-xl: 4rem;
-    --font-lg: 2.8rem;
-    --font-md: 1.4rem;
-    --font-sm: 1.2rem;
-    --font-xs: .8rem;
-    --font-nr: 1rem;
-    /* margin */
-    --mr: 1rem;
-    --mr-1: .5rem;
-    --mr-2: 1.5rem;
-    --mr-3: 3rem;
-    --mr-4: 5rem;
-    /*radius*/
-    --rd-sm: 4px;
-    --rd-md: 8px;
-    --rd-lg: 100px;
-    --rd-xl: 100%;
-    /*shadow*/
-    --shadow-dark: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    --shadow-light: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
-    /*transition*/
-    --tr-200: 200ms linear;
-    --tr-400: 400ms linear;
-    --tr-600: 600ms linear;
+  /* color */
+  --primary: #5558d8;
+  --secondary: #f89068;
+  --dark: #171516;
+  /* font */
+  --font-xl: 4rem;
+  --font-lg: 2.8rem;
+  --font-md: 1.4rem;
+  --font-sm: 1.2rem;
+  --font-xs: 0.8rem;
+  --font-nr: 1rem;
+  /* margin */
+  --mr: 1rem;
+  --mr-1: 0.5rem;
+  --mr-2: 1.5rem;
+  --mr-3: 3rem;
+  --mr-4: 5rem;
+  /*radius*/
+  --rd-sm: 4px;
+  --rd-md: 8px;
+  --rd-lg: 100px;
+  --rd-xl: 100%;
 
+  /*shadow*/
+  --sh-dark: 4px 4px 10px 0 rgba(0, 0, 0, 0.15);
+  --sh-light: -4px -4px 10px 0 rgba(250, 250, 250, 0.3);
+  /*transition*/
+  --tr-200: 200ms linear;
+  --tr-400: 400ms linear;
+  --tr-600: 600ms linear;
 }
 
-
 * {
-    font-family: "Epilogue", sans-serif;
-    font-weight: 500;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
 }
 
 *,
 html,
 body {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 html,
 body,
 section,
 footer {
-    width: 100%;
-    overflow-x: hidden;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background: white;
-
+  background: white;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    display: inline-block;
+  text-decoration: none;
+  display: inline-block;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 section {
-    padding: var(--mr-3) 0;
+  padding: var(--mr-3) 0;
 }
-
 
 .container {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
-
 .subtitle {
-    text-transform: uppercase;
-    font-weight: 700;
-    width: 100%;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: var(--font-md);
-    margin-bottom: var(--mr-3)
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: var(--font-md);
+  margin-bottom: var(--mr-3);
 }
 
 .text {
-    font-weight: 400;
-    font-size: var(--font-nr);
-    font-size: var(--font-nr);
-    line-height: 1.4;
-    opacity: .65
+  font-size: var(--font-nr);
+  font-size: var(--font-nr);
+  line-height: 1.6;
+  opacity: 0.65;
 }
 
 .btn {
-    font-weight: 600;
-    font-size: var(--font-xs);
-    background: var(--primary);
-    color: white;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 0;
-    border-radius: var(--rd-sm);
+  font-weight: 600;
+  font-size: var(--font-xs);
+  background: var(--primary);
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  border-radius: var(--rd-sm);
 }
 
 .dark-mode {
-    filter: invert(1)
+  filter: invert(1);
+}
+
+@media screen and (min-width: 760px) {
+  html {
+    font-size: 18px;
+  }
+  section {
+    padding: var(--mr-4) 0;
+  }
+
+  .subtitle {
+    margin-bottom: var(--mr-4);
+  }
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  html {
+    font-size: 20px;
+  }
 }
